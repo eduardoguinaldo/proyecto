@@ -1,0 +1,149 @@
+/*CSS GLOBAL*/
+body{
+	background-color: lightgrey;
+	font-family: Verdana;
+	width: 970px;
+	margin: auto;
+}
+
+header{
+	background-image: url("../imagenes/encabezado.png");
+	height: 100px;
+	padding-left: 10px;
+	border-radius: 0px 0px 20px 20px;
+	margin-top: -22px;
+}
+
+.titulo{
+	height: 100px;
+	width: 300px;
+	margin-left: 20px;
+	margin-top: 20px;
+	padding-top: 20px;
+}
+
+
+nav{
+	background-color: grey;
+	font-size: 25px;
+	padding-top: 20px;
+	padding-left: 20px;
+	padding-right: 20px;
+	padding-bottom: 7px;
+	border-radius: 20px 20px 0px 0px;
+}
+
+/*Para centrar el menu*/
+.divmenu{
+	margin-left: 198px;
+	margin-right: 198px;
+}
+
+/*menu*/
+a.menu{
+	background-color: black;
+	color: #E4E4E4;
+	padding: 7px;
+	margin-right: 6px;
+	text-decoration: none;
+	border-radius: 20px 20px 0px 0px;
+	-webkit-transition: background-color 1s, color 1s, border-radius 1s;
+}
+
+a:hover.menu{
+	color: #000000;
+	background-color: #00FF00;
+	border-radius: 0px 0px 0px 0px;
+}
+
+a:active.menu {
+	color: #FFFFFF;
+	background-color: #004000;
+}
+
+a.menuactual{
+	padding: 7px;
+	margin-right: 6px;
+	text-decoration: none;
+	color: #000000;
+	background-color: #00FF00;
+	border-radius: 0px 0px 0px 0px;
+}
+
+a.galeria{
+	text-decoration: none;
+	color: white;
+}
+
+a.atras{
+	text-decoration: none;
+	color: green;
+}
+
+section{
+	float: left;
+	background-color: #FEFEFE;
+	width: 650px;
+	height: 920px; /*LARGO DE PÁGINA*/
+}
+
+aside{
+	float: right;
+	width: 280px;
+	height: 913px; /*LARGO DE PÁGINA*/
+	background-color: #AAAAAA;
+	font-size: 14px;
+	padding-top: 0px;
+	padding-left: 20px;
+	padding-right: 20px;
+	padding-bottom: 7px;
+}
+
+article{
+	background-color: #FEFEFE;
+	color: black;
+	/*width: 510px;*/
+	/*height: 230px;*/
+	margin-left: 20px;
+	padding-left: 10px;
+	padding-right: 30px;
+	font-size: 14px;
+	padding-top: 2px;
+}
+
+table{
+	border: solid black 2px;
+	width: 280px;
+}
+
+table, tr, td, th{
+	border: solid black 2px;
+	border-collapse: collapse;
+	text-align:center;
+}
+
+thead{
+	border: solid black 2px;
+	color: darkgreen;
+}
+
+footer{
+	background-color: #474747;
+	padding-top: 940px; /*LARGO DE PÁGINA (20PX MAS QUE EL SECTION)*/
+	padding-bottom: 10px;
+	padding-left: 20px;
+	padding-right: 20px;
+}
+
+div.flecha{
+	float: right;
+}
+
+a.footer{
+	color: #DCDCDC;
+	text-decoration: none;
+}
+
+a:hover.footer{
+	color: #000000;
+}

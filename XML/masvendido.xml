@@ -1,0 +1,87 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE items SYSTEM "masvendido.dtd">
+<items>
+<item id="1">
+<nombre>Anycubic Kossel Linear +</nombre>
+<tipo>Impresora 3D</tipo>
+<precio>343€</precio>
+</item>
+
+<item id="2">
+<nombre>Creality Ender 3</nombre>
+<tipo>Impresora 3D</tipo>
+<precio>163,80€</precio>
+</item>
+
+<item id="3">
+<nombre>Makerbot Replicator Z18</nombre>
+<tipo>Impresora 3D</tipo>
+<precio>6,461€</precio>
+</item>
+
+<item id="4">
+<nombre>Makerbot Replicator Mini+</nombre>
+<tipo>Impresora 3D</tipo>
+<precio>1,299€</precio>
+</item>
+
+<item id="5">
+<nombre>Makerbot Replicator+</nombre>
+<tipo>Impresora 3D</tipo>
+<precio>2,499€</precio>
+</item>
+
+<item id="101">
+<nombre>Sakata3D PLA 1KG</nombre>
+<tipo>Filamento 3D</tipo>
+<precio>25€</precio>
+</item>
+
+<item id="102">
+<nombre>BQ PLA 1KG</nombre>
+<tipo>Filamento 3D</tipo>
+<precio>20€</precio>
+</item>
+
+<item id="1001">
+<nombre>Spyro, The Dragon</nombre>
+<tipo>Impresión 3D</tipo>
+<precio>Variable</precio>
+</item>
+
+<item id="1002">
+<nombre>Jarrón decorativo</nombre>
+<tipo>Encargo 3D</tipo>
+<precio>Variable</precio>
+</item>
+
+<item id="1003">
+<nombre>Calavera Venom con Simbionte</nombre>
+<tipo>Impresión 3D</tipo>
+<precio>Variable</precio>
+</item>
+
+<item id="1004">
+<nombre>Joycon Grip Nintendo Switch</nombre>
+<tipo>Encargo 3D</tipo>
+<precio>Variable</precio>
+</item>
+
+<item id="1005">
+<nombre>Cajas a medida</nombre>
+<tipo>Encargo 3D</tipo>
+<precio>Variable</precio>
+</item>
+
+<item id="1006">
+<nombre>Elucidator</nombre>
+<tipo>Encargo 3D</tipo>
+<precio>Variable</precio>
+</item>
+
+<item id="1007">
+<nombre>Pulpo Articulado</nombre>
+<tipo>Impresión 3D</tipo>
+<precio>Variable</precio>
+</item>
+</items>

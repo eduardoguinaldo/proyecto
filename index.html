@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="css/css.css">
+	<link rel="stylesheet" type="text/css" href="css/galeria.css">
+	<link rel="stylesheet" type="text/css" href="css/galeria2.css">
+	<title>3Dncargos</title>
+
+	<script src="js/tablaTienda.js"></script>
+
+</head>
+<body id="arriba">
+	<header>
+		<div class="titulo"><img src="imagenes/logo.png"></div>
+	</header>
+
+	<!--Menú-->
+	<nav>
+		<div class="divmenu">
+			<a class="menuactual" href="index.html"><b>Inicio</b></a>	<!--En el menu poner una transicion en el color al hover-->
+	 		<a class="menu" href="html/tienda.html"><b>Tienda</b></a> <!--Vídeos sobre reviews de impresoras-->
+			<a class="menu" href="html/encargos.html"><b>Encargos</b></a> <!---->
+			<a class="menu" href="html/contacto.html"><b>Contacto</b></a> <!--Formulario-->
+		</div>
+	</nav>
+
+	<!--Textos-->
+	<section>
+		<article>
+			<h2>A qué nos dedicamos</h2>
+			<p>
+				Somos una empresa dedicada a vender Impresoras 3D, componentes para reparaciones, herramientas para reparar, herramientas para el postprocesamiento de las piezas impresas, encargo de piezas personalizadas y a medida, y venta de figuras impresas en lotes.
+			</p>
+		</article>
+		<article>
+			<h2>Qué vendemos</h2>
+			<h3>Tienda</h3>
+			<div class="panels">
+			    <div class="panel panel1">
+			      <p>Diferentes</p>
+			      <p><a class="galeria" href="html/tienda.html#impresoras">Impresoras</a></p>
+			      <p>3D</p>
+			    </div>
+			    <div class="panel panel2">
+			      <p>Diferentes</p>
+			      <p><a class="galeria" href="html/tienda.html#filamentos">Filamentos</a></p>
+			      <p>3D</p>
+			    </div>
+			</div>
+			<br>
+			
+  			<script>
+				const panels = document.querySelectorAll('.panel');
+
+				function toggleOpen() {
+					this.classList.toggle('open');
+					// console.log('abro/cierro')
+				}
+			    function toggleActive(e) {
+					//console.log(e)
+
+					if(e.propertyName.includes('flex')) {
+						this.classList.toggle('open-active')
+					}
+				} 
+				      
+				panels.forEach(function(panel) {
+					panel.addEventListener('click', toggleOpen)
+					panel.addEventListener('transitionend', toggleActive)
+				});
+  			</script>
+
+
+			<h3>Encargos</h3>
+				<div class="panels_2">
+				    <div class="panel_2 panel_21">
+				      <p>Piezas y</p>
+				      <p><a class="galeria" href="html/encargos.html#figuras">Figuras 3D</a></p>
+				      <p>en lotes</p>
+				    </div>
+				    <div class="panel_2 panel_22">
+				      <p>pedidos de</p>
+				      <p><a class="galeria" href="html/encargos.html#impresiones">impresiones 3d</a></p>
+				      <p>a medida</p>
+				    </div>
+				</div>
+
+			<script>
+				const panels_2 = document.querySelectorAll('.panel_2');
+
+				function toggleOpen() {
+					this.classList.toggle('open');
+					// console.log('abro/cierro')
+				}
+			    function toggleActive(e) {
+					//console.log(e)
+
+					if(e.propertyName.includes('flex')) {
+						this.classList.toggle('open-active')
+					}
+				} 
+				      
+				panels_2.forEach(function(panel_2) {
+					panel_2.addEventListener('click', toggleOpen)
+					panel_2.addEventListener('transitionend', toggleActive)
+				});
+  			</script>
+		</article>
+	</section>
+
+	<!--Tabla enlazada a un XML con lo "más vendido"-->
+	<aside>
+		<h2>Lo más solicitado</h2>
+		<h3>Tienda y encargos</h3>
+		<table id="tablaTienda">
+			<thead>
+		   		<tr>
+			      	<th>Nombre</th>
+			     	<th>Tipo</th>
+			     	<th>Precio</th>
+		 	   	</tr>
+	 		</thead>
+			<tbody id="FilasTienda"></tbody>
+		</table>
+	</aside>
+
+<footer>
+	<div class="flecha"><a href="#arriba"><img src="imagenes/volverarriba.png"></a></div>
+	<div>
+		<a class="footer" href="index.html"><b>Inicio</b></a>	<!---->
+ 		<a class="footer" href="html/tienda.html"><b>Tienda</b></a> <!--Vídeos sobre reviews de impresoras-->
+		<a class="footer" href="html/encargos.html"><b>Encargos</b></a> <!--Animaciones con javascript en la galería de encargos realizados-->
+		<a class="footer" href="html/contacto.html"><b>Contacto</b></a> <!--Formulario-->
+	</div>
+	<p>© Eduardo Guinaldo Marcos</p>
+</footer>
+</body>
+</html>

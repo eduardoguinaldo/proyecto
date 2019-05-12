@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="../css/css.css">
+	<link rel="stylesheet" type="text/css" href="../css/slider-encargos.css">
+	<link rel="stylesheet" type="text/css" href="../css/css-encargos.css">
+	<title>3Dncargos</title>
+
+	<script src="../js/tablaTienda1.js"></script>
+	<script src="../js/arrayTienda.js"></script>
+	<script src="../js/arrayEncargo.js"></script>
+
+</head>
+<body id="arriba">
+	<header>
+		<div class="titulo"><img src="../imagenes/logo.png"></div>
+	</header>
+
+	<!--Menú-->
+	<nav>
+		<div class="divmenu">
+			<a class="menu" href="../index.html"><b>Inicio</b></a>	<!--En el menu poner una transicion en el color al hover-->
+	 		<a class="menu" href="tienda.html"><b>Tienda</b></a> <!--Vídeos sobre reviews de impresoras-->
+			<a class="menuactual" href="encargos.html"><b>Encargos</b></a> <!---->
+			<a class="menu" href="contacto.html"><b>Contacto</b></a> <!--Formulario-->
+		</div>
+	</nav>
+
+	<!--Textos-->
+	<section>
+		<article>
+			<h2 id="figuras">Impresiones por lotes</h2>
+			<div class="slider">
+				<ul>
+					<li>
+						<img src="../imagenes/encargos/slider-lotes/1.png" alt="">
+					</li>
+					<li>
+						<img src="../imagenes/encargos/slider-lotes/2.png" alt="">
+					</li>
+					<li>
+		  				<img src="../imagenes/encargos/slider-lotes/3.png" alt="">
+					</li>
+					<li>
+		  				<img src="../imagenes/encargos/slider-lotes/4.png" alt="">
+					</li>
+					<li>
+		  				<img src="../imagenes/encargos/slider-lotes/5.png" alt="">
+					</li>
+					<li>
+		  				<img src="../imagenes/encargos/slider-lotes/6.png" alt="">
+					</li>
+				</ul>
+			</div>
+
+			<p>Impresiones simultáneas de figuras, llaveros y otros objetos diferentes para regalar, vender en tu tienda o como decoración para la misma.</p>
+			<p>Las impresiones se realizan en tandas de 4, 6, 8 (depeniendo del tamaño).</p>
+			<p>Son impresiones genéricas, sin diferencias entre sí.</p>
+			<p>Los precios son variables en función del tamaño, relleno o detalles que el cliente elija.</p>
+
+			<table class="tiendatabla1">
+				<tr class="tiendatabla1">
+					<td class="tiendatabla1">
+						<div class="divtienda1">
+							<img class="expositor" src="../imagenes/encargos/sin fondo/1.png">
+							<h4>Calavera Venom con Simbionte</h4>
+							<h5>Precio variable</h5>
+						</div>
+					</td>
+					<td class="tiendatabla1">
+						<div class="divtienda1">
+							<img class="expositor" src="../imagenes/encargos/sin fondo/2.png">
+							<h4>Terminator T-800</h4>
+							<h5>Precio variable</h5>
+						</div>
+					</td>
+				</tr>
+
+				<tr class="tiendatabla1">
+					<td class="tiendatabla1">
+						<div class="divtienda1">
+							<img class="expositor" src="../imagenes/encargos/sin fondo/3.png">
+							<h4>Spyro</h4>
+							<h5>Precio variable</h5>
+						</div>
+					</td>
+					<td class="tiendatabla1">
+						<div class="divtienda1">
+							<img class="expositor" src="../imagenes/encargos/sin fondo/4.png">
+							<h4>Pulpo Articulado</h4>
+							<h5>Precio variable</h5>
+						</div>
+					</td>
+				</tr>
+			</table>
+
+			<h3>Actualmente en stock:</h3>
+
+			<select id="tipoimpr" onchange="cambioobjeto3d()">
+				<option value="">Seleccione impresión 3D</option>
+				<option value="llave">Llavero</option>
+				<option value="deco">Decoración</option>
+				<option value="figu">Figura</option>
+			</select> 
+
+			<select id="objeto3d"></select>
+			<br><br>
+			<button type="button" onclick="alert('La tienda está en mantenimiento, vuelve a intentarlo más tarde!')">Completar detalles del pedido y pasar por caja</button>
+		</article>
+		<br>
+		<article>
+			<h2 id="impresiones">Impresiones a medida</h2>
+			<div class="slider">
+				<ul>
+					<li>
+						<img src="../imagenes/encargos/slider-encargos/1.png" alt="">
+					</li>
+					<li>
+						<img src="../imagenes/encargos/slider-encargos/2.png" alt="">
+					</li>
+					<li>
+		  				<img src="../imagenes/encargos/slider-encargos/3.png" alt="">
+					</li>
+					<li>
+		  				<img src="../imagenes/encargos/slider-encargos/4.png" alt="">
+					</li>
+					<li>
+		  				<img src="../imagenes/encargos/slider-encargos/5.png" alt="">
+					</li>
+					<li>
+		  				<img src="../imagenes/encargos/slider-encargos/6.png" alt="">
+					</li>
+				</ul>
+			</div>
+
+			<p>Impresiones personalizadas para cada cliente. Desde la modificación de un modelo 3d para adaptarlo a la necesidad del cliente, hasta el modelado desde cero de la impresión que el cliente quiera realizar.</p>
+			<p>Las impresiones se realizan de manera única.</p>
+			<p>Son impresiones encargadas por el cliente y a su elección.</p>
+			<p>Los precios son variables en función del tamaño, relleno o detalles que el cliente elija.</p>
+			
+			<table class="tiendatabla1">
+				<tr class="tiendatabla1">
+					<td class="tiendatabla1">
+						<div class="divtienda1">
+							<img class="expositor" src="../imagenes/encargos/sin fondo/6.png">
+							<h4>Jarrón decorativo</h4>
+							<h5>Precio variable</h5>
+						</div>
+					</td>
+					<td class="tiendatabla1">
+						<div class="divtienda1">
+							<img class="expositor" src="../imagenes/encargos/sin fondo/10.png">
+							<h4>Joycon Grip Nintendo Switch</h4>
+							<h5>Precio variable</h5>
+						</div>
+					</td>
+				</tr>
+				<tr class="tiendatabla1">
+					<td class="tiendatabla1">
+						<div class="divtienda1">
+							<img class="expositor" src="../imagenes/encargos/sin fondo/14.png">
+							<h4>Elucidator</h4>
+							<h5>Precio variable</h5>
+						</div>
+					</td>
+					<td class="tiendatabla1">
+						<div class="divtienda1">
+							<img class="expositor" src="../imagenes/encargos/sin fondo/15.png">
+							<h4>Cajas a medida</h4>
+							<h5>Precio variable</h5>
+						</div>
+					</td>
+				</tr>
+			</table>
+
+			<h3>Realiza tu encargo a medida:</h3>
+
+			<select id="tipoenc" onchange="cambiopedido3d()">
+				<option value="">Seleccione pedido</option>
+				<option value="cosplay">Cosplay</option>
+				<option value="decor">Decoración</option>
+				<option value="utiles">Accesorios</option>
+				<option value="encargo">Encargo personalizado</option>
+			</select> 
+
+			<select id="pedido3d"></select>
+			<br><br>
+			<button type="button" onclick="alert('La tienda está en mantenimiento, vuelve a intentarlo más tarde!')">Especificar detalles del pedido y pasar por caja</button>
+
+		</article>
+	</section>
+
+	<!--Tabla enlazada a un XML con lo "más vendido"-->
+	<aside>
+		<h2>Lo más solicitado</h2>
+		<h3>Tienda y encargos</h3>
+		<table class="tablaTienda">
+			<thead>
+		   		<tr>
+			      	<th>Nombre</th>
+			     	<th>Tipo</th>
+			     	<th>Precio</th>
+		 	   	</tr>
+	 		</thead>
+			<tbody id="FilasTienda"></tbody>
+		</table>
+	</aside>
+
+<footer>
+	<div class="flecha"><a href="#arriba"><img src="../imagenes/volverarriba.png"></a></div>
+	<div>
+		<a class="footer" href="../index.html"><b>Inicio</b></a>	<!---->
+ 		<a class="footer" href="tienda.html"><b>Tienda</b></a> <!--Vídeos sobre reviews de impresoras-->
+		<a class="footer" href="encargos.html"><b>Encargos</b></a> <!--Animaciones con javascript en la galería de encargos realizados-->
+		<a class="footer" href="contacto.html"><b>Contacto</b></a> <!--Formulario-->
+	</div>
+	<p>© Eduardo Guinaldo Marcos</p>
+</footer>
+</body>
+</html>

@@ -1,0 +1,46 @@
+/*CSS*/
+section{
+	height: 2420px; /*LARGO DE PÁGINA*/
+}
+
+aside{
+	height: 2413px; /*LARGO DE PÁGINA*/
+}
+
+footer{
+	padding-top: 2440px; /*LARGO DE PÁGINA (20PX MAS QUE EL SECTION)*/
+}
+
+/*CSS TIENDA*/
+table.tiendatabla1{
+	border: solid lightgrey 0px;
+}
+tr.tiendatabla1{
+	border: solid lightgrey 0px;
+}
+td.tiendatabla1{
+	border: solid lightgrey 0px;
+	padding: 20px;
+}
+
+div.divtienda1{
+	padding-top: 20px;
+	width: 250px;
+	height: 240px;
+	background: lightgrey;
+	border-radius: 25px;
+	transition: transform .2s;
+	text-shadow: 3px 3px darkgrey;
+}
+
+div.divtienda1:hover{
+	transform: scale(1.2);
+}
+
+img.expositor{
+	width: 150px;
+	height: 150px;
+}
+h2, h3, h4{
+	text-shadow: 3px 3px darkgrey;
+}
