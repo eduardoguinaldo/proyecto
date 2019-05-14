@@ -49,7 +49,7 @@ fieldset{
 	padding-left: 20px;
 	padding-right: 60px;
 }
-input.apellido{
+input.largo{
 	width: 300px;
 }
 
@@ -61,5 +61,15 @@ input.precio{
 	width: 45px;
 }
 
+input:focus {
+	border-color: green;
+	box-shadow: 5px 2px #888888;
 
+}
+
+textarea:focus {
+	border-color: green;
+	box-shadow: 5px 2px #888888;
+
+}
 

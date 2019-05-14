@@ -1,6 +1,7 @@
 /*CSS GLOBAL*/
 body{
-	background-color: lightgrey;
+	background-color: lightgrey; /*Por si el degradado no es compatible con el navegador*/
+	background-image: linear-gradient(to bottom, #3D3D3D, #F2F2F2);
 	font-family: Verdana;
 	width: 970px;
 	margin: auto;
@@ -84,13 +85,13 @@ section{
 	float: left;
 	background-color: #FEFEFE;
 	width: 650px;
-	height: 920px; /*LARGO DE PÁGINA*/
+	height: 950px; /*LARGO DE PÁGINA*/
 }
 
 aside{
 	float: right;
 	width: 280px;
-	height: 913px; /*LARGO DE PÁGINA*/
+	height: 943px; /*LARGO DE PÁGINA*/
 	background-color: #AAAAAA;
 	font-size: 14px;
 	padding-top: 0px;
@@ -129,7 +130,7 @@ thead{
 
 footer{
 	background-color: #474747;
-	padding-top: 940px; /*LARGO DE PÁGINA (20PX MAS QUE EL SECTION)*/
+	padding-top: 970px; /*LARGO DE PÁGINA (20PX MAS QUE EL SECTION)*/
 	padding-bottom: 10px;
 	padding-left: 20px;
 	padding-right: 20px;
@@ -137,6 +138,12 @@ footer{
 
 div.flecha{
 	float: right;
+}
+
+div.audio{
+	float: right;
+	padding-right: 200px;
+	margin-top: -60px;
 }
 
 a.footer{

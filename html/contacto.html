@@ -33,11 +33,15 @@
 					<legend>Datos del cliente</legend>
 					Nombre
 					<br>
-					<input type="text" name="nombre">
+					<input type="text" name="nombre" required>
 					<br>
 					Apellidos
 					<br>
-					<input class="apellido" type="text" name="apellidos">
+					<input class="largo" type="text" name="apellidos" required>
+					<br>
+					Correo
+					<br>
+					<input class="largo" type="email" name="correo" required>
 					<br>
 				</fieldset>
 				<br>
@@ -76,7 +80,7 @@
 					<br>
 				</fieldset>
 				<br>
-				<button type="submit" value="guardar" onclick="alert('¡Datos enviados!')">Enviar</button>
+				<button type="submit" value="guardar">Enviar</button>
 				<button type="reset" value="borrar" onclick="alert('¡Datos borrados!')">Borrar los datos introducidos</button>
 			</form>
 
