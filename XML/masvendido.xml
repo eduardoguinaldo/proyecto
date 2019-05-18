@@ -1,6 +1,5 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE items SYSTEM "masvendido.dtd">
-<items>
+<items xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="masvendido.xsd">
 <item id="1">
 <nombre>Anycubic Kossel Linear +</nombre>
 <tipo>Impresora 3D</tipo>
